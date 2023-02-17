@@ -1,0 +1,155 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+
+}
+
+body {
+    margin: 0;
+    background-color: rgb(250, 248, 248);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .price-comp {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 25px;
+  }
+  
+  .price-col {
+    background-color: white;
+    box-shadow: 0 7px 30px rgba(25, 24, 29, 0.1);
+    padding: 40px;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 275px;
+    border-radius: 8px;
+  }
+  
+  .price-col.pop {
+    position: relative;
+    background-color: #191919;
+    box-shadow: 0 7px 30px rgba(34, 33, 37, 0.3);
+    color: white;
+    margin-top: -30px;
+    padding-top: 80px;
+    margin-bottom: -30px;
+    padding-bottom: 60px;
+  }
+  
+  .price-col:first-child {
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+  }
+  
+  .price-col:last-child {
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+  }
+  
+  .price-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 60px;
+    display: flex;
+  }
+  
+  .dollar {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 3px;
+  }
+  
+  .month {
+    font-size: 15px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .name {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .price-col.pop .divider {
+    background-color: rgba(255, 255, 255, .2);
+  }
+  
+  .qual {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .qual img {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+  }
+  
+  .qual.notAv {
+    color: #999;
+    text-decoration-line: line-through;
+  }
+  
+  .most-pop {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+  
+  .start {
+    border: none;
+    background-color:#191919;
+    color: white;
+    width: 100%;
+    padding: 12px 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 50px;
+    transition: 100ms;
+    transform: scale(1);
+  }
+  
+  .price-col.pop .start {
+    background-color: white;
+    color: #191919;
+  }
+  
+  .start:hover, .start:focus {
+    transform: scale(1.1);
+  }
